@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en-title="MedhaSkill — AI-Powered Online Learning Management System">MedhaSkill — AI-संचालित ऑनलाइन लर्निंग मैनेजमेंट सिस्टम</title>
+  <meta name="description" content="MedhaSkill के साथ अपनी सीखने की यात्रा को बदलें। इंटरैक्टिव मॉड्यूल, AI ट्यूटर और द्विभाषी शिक्षण अनुभव।">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/medhaskill-logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand" aria-label="MedhaSkill Home">
+        <img src="assets/images/medhaskill-logo.png" alt="MedhaSkill Logo" class="brand-logo-img">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active" data-en="Home">होम</a></li>
+        <li class="nav-dropdown">
+          <a href="features.html" class="nav-link" data-en="Features ▾">विशेषताएं ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="features.html#learning"><div class="dropdown-icon" style="background:rgba(79,70,229,0.15);color:#6366F1;">🧠</div> <span data-en="Learning Path">लर्निंग पाथ</span></a>
+            <a href="features.html#ai"><div class="dropdown-icon" style="background:rgba(13,148,136,0.15);color:#14B8A6;">🤖</div> <span data-en="AI Tutor">AI ट्यूटर</span></a>
+            <a href="features.html#gamification"><div class="dropdown-icon" style="background:rgba(245,158,11,0.15);color:#FBBF24;">🏆</div> <span data-en="Gamification">गेमिफिकेशन</span></a>
+            <a href="features.html#analytics"><div class="dropdown-icon" style="background:rgba(124,58,237,0.15);color:#8B5CF6;">📊</div> <span data-en="Analytics">एनालिटिक्स</span></a>
+          </div>
+        </li>
+        <li><a href="courses.html" class="nav-link" data-en="Courses">कोर्स</a></li>
+        <li><a href="about.html" class="nav-link" data-en="About">हमारे बारे में</a></li>
+        <li class="mobile-auth-links" style="display: none;"></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang="hi">हिन्दी</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+      <div class="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="section-label">
+            <span class="dot"></span> <span data-en="Next-Generation Education">आधुनिक शिक्षा का नया दौर</span>
+          </div>
+          <h1 data-en="Transform Your Learning Journey with <span class=&quot;text-gradient-primary&quot;>MedhaSkill</span>">
+            <span class="text-gradient-primary">MedhaSkill</span> के साथ अपनी सीखने की यात्रा को बदलें
+          </h1>
+          <p data-en="Experience interactive modules where intelligent AI tutoring, hands-on simulations, and gamified challenges come together. Jump straight into any course or module with direct access.">
+            इंटरैक्टिव मॉड्यूल का अनुभव करें जहाँ बुद्धिमान AI ट्यूटरिंग, व्यावहारिक सिमुलेशन और गेमिफाइड चुनौतियाँ एक साथ मिलती हैं। बिना किसी लॉगिन के सीधे किसी भी कोर्स और मॉड्यूल में सीखना शुरू करें।
+          </p>
+          <div class="hero-actions">
+            <a href="courses.html" class="btn btn-primary btn-lg" data-en="Explore All Modules 🚀">सभी मॉड्यूल देखें 🚀</a>
+            <a href="#how-it-works" class="btn btn-outline btn-lg" data-en="How It Works ▶️">यह कैसे काम करता है ▶️</a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Interactive Module Preview -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper" style="background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(20px); padding: 32px; border: 1px solid rgba(15, 23, 42, 0.1); box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border-color);">
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">🧠</div>
+                <div>
+                  <div style="font-weight: 700; color: var(--text-primary); font-size: 1.05rem;" data-en="Interactive Module Hub">इंटरैक्टिव मॉड्यूल हब</div>
+                  <div style="font-size: 0.82rem; color: var(--text-muted);" data-en="Unit 4: Concept Mastery &amp; Practice">इकाई 4: अवधारणा दक्षता और अभ्यास</div>
+                </div>
+              </div>
+              <span class="badge badge-success" data-en="All Unlocked ✓">सब अनलॉक ✓</span>
+            </div>
+
+            <div style="margin-bottom: 22px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+                <span data-en="Module Progress">मॉड्यूल प्रगति</span>
+                <span style="color: var(--secondary-light); font-weight: 700;">78%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill secondary" data-width="78" style="width: 78%;"></div></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div style="background: var(--bg-dark); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div style="font-size: 1.3rem; margin-bottom: 6px;">🤖</div>
+                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);" data-en="AI Tutor Active">AI ट्यूटर सक्रिय</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);" data-en="24/7 Hindi &amp; English Help">24/7 हिन्दी और अंग्रेजी सहायता</div>
+              </div>
+              <div style="background: var(--bg-dark); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <div style="font-size: 1.3rem; margin-bottom: 6px;">🏆</div>
+                <div style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);" data-en="1,450 XP Earned">1,450 XP अर्जित</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);" data-en="12-Day Streak Active">12-दिन की स्ट्रीक जारी</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. How It Works (5-Step Methodology) -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label"><span class="dot"></span> <span data-en="How It Works">यह कैसे काम करता है</span></div>
+        <h2 class="section-title" data-en="Our 5-Step Learning Methodology">हमारी 5-चरणीय शिक्षण पद्धति</h2>
+        <p class="section-subtitle" data-en="Every MedhaSkill module follows a proven path that turns curiosity into lasting mastery.">MedhaSkill का हर मॉड्यूल एक सिद्ध मार्ग का अनुसरण करता है जो जिज्ञासा को स्थायी दक्षता में बदलता है।</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px;">
+        <div class="card reveal">
+          <div class="card-icon primary">🔍</div>
+          <h3 class="card-title" data-en="1. Explore">1. खोजें</h3>
+          <p class="card-text" data-en="Spark curiosity with relatable real-world problems and visual hooks.">वास्तविक जीवन की समस्याओं और विज़ुअल उदाहरणों से जिज्ञासा जगाएं।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon secondary">📖</div>
+          <h3 class="card-title" data-en="2. Learn">2. सीखें</h3>
+          <p class="card-text" data-en="Understand concepts through clear bilingual stories and guided visuals.">स्पष्ट द्विभाषी कहानियों और विज़ुअल मार्गदर्शन से अवधारणाओं को समझें।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon accent">🧪</div>
+          <h3 class="card-title" data-en="3. Practice">3. अभ्यास करें</h3>
+          <p class="card-text" data-en="Interact directly with digital simulations and hands-on labs.">डिजिटल सिमुलेशन और इंटरैक्टिव लैब्स के साथ सीधे अभ्यास करें।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon violet">🎯</div>
+          <h3 class="card-title" data-en="4. Challenge">4. चुनौती</h3>
+          <p class="card-text" data-en="Test your skills with adaptive quizzes and daily challenges.">अनुकूली क्विज़ और दैनिक चुनौतियों के साथ अपने कौशल का परीक्षण करें।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon primary">🏆</div>
+          <h3 class="card-title" data-en="5. Master">5. महारत पाएं</h3>
+          <p class="card-text" data-en="Track your progress, earn XP badges, and complete modules.">अपनी प्रगति ट्रैक करें, XP बैज अर्जित करें और मॉड्यूल पूरा करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Key Features (Alternating Layout) -->
+  <section class="section" style="background: #F1F5F9;">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 60px; margin-bottom: 80px;">
+        <div class="card-glass reveal-left">
+          <div class="card-icon secondary">🤖</div>
+          <h3 style="margin-bottom: 12px;" data-en="AI-Powered Personal Tutor">AI-संचालित व्यक्तिगत ट्यूटर</h3>
+          <p style="color: var(--text-muted); margin-bottom: 18px;" data-en="Stuck on a concept? Ask our AI tutor in Hindi or English for instant hints, step-by-step breakdowns, and personalized practice.">किसी अवधारणा पर अटक गए हैं? त्वरित संकेतों, चरण-दर-चरण समाधान और व्यक्तिगत अभ्यास के लिए हिन्दी या अंग्रेजी में हमारे AI ट्यूटर से पूछें।</p>
+          <a href="features.html#ai" class="btn btn-outline btn-sm" data-en="Learn More →">और जानें →</a>
+        </div>
+        <div class="reveal-right">
+          <div class="section-label"><span class="dot"></span> <span data-en="Smart Guidance">स्मार्ट मार्गदर्शन</span></div>
+          <h2 class="section-title" data-en="Personalized Help Whenever You Need It">जब भी आपको आवश्यकता हो, व्यक्तिगत सहायता</h2>
+          <p style="color: var(--text-muted);" data-en="MedhaSkill adapts to how you learn — adjusting pace, clarifying doubts, and reinforcing weak areas automatically.">MedhaSkill आपके सीखने के तरीके के अनुसार ढल जाता है — गति को समायोजित करता है, संदेह दूर करता है और कमज़ोर क्षेत्रों को मजबूत करता है।</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="align-items: center; gap: 60px;">
+        <div class="reveal-left">
+          <div class="section-label"><span class="dot"></span> <span data-en="Direct Access">सीधा एक्सेस</span></div>
+          <h2 class="section-title" data-en="Direct Access to Every Learning Module">हर लर्निंग मॉड्यूल तक सीधा एक्सेस</h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px;" data-en="No login walls or restricted panels. Open MedhaSkill and explore all courses, simulations, AI tools, and progress analytics freely.">कोई लॉगिन बाधा या प्रतिबंधित पैनल नहीं। MedhaSkill खोलें और सभी कोर्स, सिमुलेशन, AI टूल्स और प्रगति एनालिटिक्स का स्वतंत्र रूप से उपयोग करें।</p>
+          <a href="courses.html" class="btn btn-primary" data-en="Open All Modules">सभी मॉड्यूल खोलें</a>
+        </div>
+        <div class="card-glass reveal-right">
+          <div class="card-icon accent">🔓</div>
+          <h3 style="margin-bottom: 12px;" data-en="All Modules Included">सभी मॉड्यूल शामिल हैं</h3>
+          <p style="color: var(--text-muted);" data-en="Access Mathematics, Science, Computer Science, Language Arts, and Creative Arts from a single unified workspace.">एक ही एकीकृत कार्यक्षेत्र से गणित, विज्ञान, कंप्यूटर विज्ञान, भाषा कला और रचनात्मक कला तक पहुंच प्राप्त करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Course Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label"><span class="dot"></span> <span data-en="Subjects &amp; Modules">विषय और मॉड्यूल</span></div>
+        <h2 class="section-title" data-en="Explore Core Learning Categories">मुख्य शिक्षण श्रेणियां देखें</h2>
+        <p class="section-subtitle" data-en="Carefully structured modules across every major subject.">हर प्रमुख विषय में सावधानीपूर्वक तैयार किए गए इंटरैक्टिव मॉड्यूल।</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-icon primary">📐</div>
+          <h3 class="card-title" data-en="Mathematics">गणित</h3>
+          <p class="card-text" data-en="Algebra, Geometry, Statistics, and visual problem solving.">बीजगणित, ज्यामिति, सांख्यिकी और विज़ुअल समस्या समाधान।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon secondary">🔬</div>
+          <h3 class="card-title" data-en="Science">विज्ञान</h3>
+          <p class="card-text" data-en="Physics, Biology, Chemistry, and virtual lab experiments.">भौतिकी, जीव विज्ञान, रसायन विज्ञान और वर्चुअल लैब प्रयोग।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon accent">💻</div>
+          <h3 class="card-title" data-en="Computer Science">कंप्यूटर विज्ञान</h3>
+          <p class="card-text" data-en="Python programming, web development, and logical thinking.">पायथन प्रोग्रामिंग, वेब डेवलपमेंट और तार्किक सोच।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon violet">✍️</div>
+          <h3 class="card-title" data-en="Language Arts">भाषा कला</h3>
+          <p class="card-text" data-en="Hindi &amp; English comprehension, grammar, and creative writing.">हिन्दी और अंग्रेजी बोध, व्याकरण और रचनात्मक लेखन।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon primary">🌍</div>
+          <h3 class="card-title" data-en="Social Studies">सामाजिक अध्ययन</h3>
+          <p class="card-text" data-en="World history, geography, and civic understanding.">विश्व इतिहास, भूगोल और नागरिक समझ।</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon secondary">🎨</div>
+          <h3 class="card-title" data-en="Creative Arts">रचनात्मक कला</h3>
+          <p class="card-text" data-en="Digital design, visual storytelling, and creative expression.">डिजिटल डिज़ाइन, विज़ुअल स्टोरीटेलिंग और रचनात्मक अभिव्यक्ति।</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="courses.html" class="btn btn-outline btn-lg" data-en="View All Courses &amp; Modules 📚">सभी कोर्स और मॉड्यूल देखें 📚</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Testimonials -->
+  <section class="section" style="background: #F1F5F9;">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label"><span class="dot"></span> <span data-en="Community Voices">समुदाय की आवाज़</span></div>
+        <h2 class="section-title" data-en="Loved by Learners Everywhere">हर जगह शिक्षार्थियों की पसंद</h2>
+      </div>
+
+      <div class="grid-3" style="margin-top: 40px;">
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">❝</div>
+          <p class="quote-text" data-en="&quot;Learning in Hindi first and switching to English whenever I want to practice terminology has boosted my confidence tremendously.&quot;">"पहले हिन्दी में सीखना और जब चाहें तब अंग्रेजी शब्दावली का अभ्यास करने के लिए भाषा बदलना — इसने मेरा आत्मविश्वास बहुत बढ़ाया है।"</p>
+          <div class="author">
+            <div class="author-avatar">आ</div>
+            <div>
+              <div class="author-name" data-en="Aarav Sharma">आरव शर्मा</div>
+              <div class="author-role" data-en="Science &amp; Coding Learner">विज्ञान और कोडिंग शिक्षार्थी</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">❝</div>
+          <p class="quote-text" data-en="&quot;The interactive simulations make geometry and physics click immediately instead of just memorizing formulas.&quot;">"इंटरैक्टिव सिमुलेशन से ज्यामिति और भौतिकी के सिद्धांत रटने के बजाय तुरंत समझ में आ जाते हैं।"</p>
+          <div class="author">
+            <div class="author-avatar">प्र</div>
+            <div>
+              <div class="author-name" data-en="Priya Verma">प्रिया वर्मा</div>
+              <div class="author-role" data-en="Mathematics Learner">गणित शिक्षार्थी</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">❝</div>
+          <p class="quote-text" data-en="&quot;One simple login unlocks everything cleanly. No confusing menus—just jump straight into any module.&quot;">"एक साधारण लॉगिन से सब कुछ आसानी से खुल जाता है। कोई उलझन नहीं — सीधे किसी भी मॉड्यूल में सीखना शुरू करें।"</p>
+          <div class="author">
+            <div class="author-avatar">रो</div>
+            <div>
+              <div class="author-name" data-en="Rohan Patel">रोहन पटेल</div>
+              <div class="author-role" data-en="Web Development Learner">वेब डेवलपमेंट शिक्षार्थी</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CTA Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2 data-en="Ready to Start Learning on MedhaSkill?">MedhaSkill पर सीखना शुरू करने के लिए तैयार हैं?</h2>
+        <p data-en="Jump straight in and explore every interactive course and module right away.">सीधे जुड़ें और तुरंत हर इंटरैक्टिव कोर्स और मॉड्यूल का अनुभव करें।</p>
+        <a href="courses.html" class="btn btn-accent btn-lg" data-en="Explore All Courses 🚀">सभी कोर्स देखें 🚀</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/images/medhaskill-logo.png" alt="MedhaSkill Logo" class="footer-logo-img">
+          </div>
+          <p class="footer-desc" data-en="Empowering minds through interactive, AI-driven learning modules in Hindi and English.">हिन्दी और अंग्रेजी में इंटरैक्टिव, AI-संचालित लर्निंग मॉड्यूल के माध्यम से हर शिक्षार्थी को सशक्त बनाना।</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title" data-en="Platform">प्लेटफॉर्म</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-en="Home">होम</a></li>
+            <li><a href="features.html" data-en="Features">विशेषताएं</a></li>
+            <li><a href="courses.html" data-en="Courses">कोर्स</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title" data-en="Company">कंपनी</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-en="About Us">हमारे बारे में</a></li>
+            <li><a href="courses.html" data-en="All Modules">सभी मॉड्यूल</a></li>
+            <li><a href="features.html" data-en="Platform Features">प्लेटफॉर्म विशेषताएं</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title" data-en="Learning">शिक्षण</h4>
+          <ul class="footer-links">
+            <li><a href="features.html#learning" data-en="Learning Path">लर्निंग पाथ</a></li>
+            <li><a href="features.html#ai" data-en="AI Tutor">AI ट्यूटर</a></li>
+            <li><a href="features.html#gamification" data-en="Gamification">गेमिफिकेशन</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title" data-en="Legal">कानूनी</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-en="Privacy Policy">गोपनीयता नीति</a></li>
+            <li><a href="#" data-en="Terms of Service">सेवा की शर्तें</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="&copy; 2026 MedhaSkill. All rights reserved.">&copy; 2026 MedhaSkill. सर्वाधिकार सुरक्षित।</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-en="Privacy">गोपनीयता</a>
+          <a href="#" data-en="Terms">शर्तें</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
